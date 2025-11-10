@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Autograph Perfume | Fragraniza</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+ <style>
+    body {
+      background-color: #fff;
+      font-family: 'Poppins', sans-serif;
+    }
+    .product-images img {
+      border-radius: 10px;
+      cursor: pointer;
+      width: 300px;
+    }
+    .thumbs img {
+      width: 70px;
+      height: 70px;
+      border-radius: 8px;
+      object-fit: cover;
+      margin-bottom: 10px;
+      cursor: pointer;
+      border: 2px solid transparent;
+    }
+    .thumbs img:hover {
+      border-color: #007bff;
+    }
+    .price {
+      font-size: 28px;
+      font-weight: 700;
+      color: #000;
+    }
+    .old-price {
+      text-decoration: line-through;
+      color: #999;
+      margin-left: 8px;
+      font-size: 18px;
+    }
+    .discount {
+      color: green;
+      font-weight: 600;
+      margin-left: 8px;
+    }
+    .btn-purchase {
+      background-color: #0d6efd;
+      color: white;
+      font-weight: 600;
+      padding: 10px;
+      border-radius: 8px;
+      width: 480px;
+    }
+    .btn-cart {
+      border: 2px solid #0d6efd;
+      font-weight: 600;
+      padding: 10px;
+      border-radius: 8px;
+      width: 480px;
+      
+    }
+    ul li {
+      margin-bottom: 5px;
+    }
+
+   .carousel-track {
+    display: flex;
+    width: max-content; 
+    padding: 50px 50px;
+    gap: 50px; 
+    padding-bottom: 20px;
+   
+}
+
+     .perfume-card:hover{
+    transition: 0.5s;
+    border-top-right-radius: 30%;
+    border-bottom-right-radius: 0%;
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 30%;
+    }
+
+    .perfume-card { 
+    flex-shrink: 0;
+    width: 350px;
+    height: 350px;
+    background-color: #fff;
+    border-bottom-right-radius: 30%;
+    border-top-left-radius: 30%;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.621); 
+    transition: 0.5s;
+}
+
+   .carousel-container:hover {
+  
+    scroll-behavior: smooth;
+    overflow-x: auto; 
+ scrollbar-width: none;
+    
+}
+ 
+  nav{
+    box-shadow: 0 2px 20px -2px rgba(0, 0, 0, 0.2);
+    
+  }
+  </style>
+</head>
+<body>
+
+   <nav class="navbar navbar-expand-lg">
+  <div class="logo-container">
+   <h3 style="margin-left: 50px;"><b>Fragranzia</b></h3>
+  </div>
+   <DIV class="navbar " style="padding-left: 450px;" >
+    <a class="nav-link mx-4" href="">Home</a>
+         <a class="nav-link mx-4" href="">Products</a>
+          <a class="nav-link mx-4" href="">Gifting</a>
+          <a class="nav-link mx-4" href="">About</a>
+          <input type="text" class="form-control" style="width: 190px; border-radius: 50px; " placeholder="Search Here" >
+           <i class="bi bi-cart mx-3"></i>
+           <i class="bi bi-bell mx-3"></i>
+           <i class="bi bi-person mx-3"></i>
+   </DIV>
+  </nav>
+
+
+  <div class="container py-5" style="margin-right: 60px;">
+    <div class="row">
+      
+      
+      <div class="col-lg-5 d-flex flex-column align-items-center">
+        
+        <div class="d-flex justify-content-end mb-2 w-100">
+       
+            <i class="bi bi-heart fs-4 me-3" style="cursor:pointer;"></i>
+       
+            <i class="bi bi-share fs-4" style="cursor:pointer;"></i>
+</div>
+
+        
+        
+        <div class="d-flex">
+          <div class="thumbs d-flex flex-column me-3">
+            <img src="https://m.media-amazon.com/images/I/61oCd-BAyxL._AC_UF1000,1000_QL80_.jpg" onclick="mainImg.src=this.src" alt="">
+            <img src="https://m.media-amazon.com/images/I/61oCd-BAyxL._AC_UF1000,1000_QL80_.jpg" onclick="mainImg.src=this.src" alt="">
+            <img src="https://m.media-amazon.com/images/I/61oCd-BAyxL._AC_UF1000,1000_QL80_.jpg" onclick="mainImg.src=this.src" alt="">
+          </div>
+          <div class="product-images text-center">
+            <img id="mainImg" src="https://m.media-amazon.com/images/I/61oCd-BAyxL._AC_UF1000,1000_QL80_.jpg" class="img-fluid" alt="Perfume">
+          </div>
+        </div>
+
+      
+
+        
+        <div class="mt-4  gap-3 w-75">
+          <button class="btn-purchase">Purchase Now</button>
+          <button class="btn-cart" style="margin-top: 10px;">Add to Cart</button>
+        </div>
+    
+    </div>
+
+    
+    
+    
+
+      <div class="col-lg-7 ps-5 ">
+        <h4 class="fw-bold">Autograph eau de parfum 100ml for men</h4>
+        <p class="text-secondary mb-1">Autograph</p>
+        <p class="mb-1">
+          <span class="text-warning fw-bold">⭐ 4.5</span>
+          <span class="text-muted">| 1,000 Ratings</span>
+        </p>
+        <p class="text-danger fw-semibold">Hurry! only few stocks left!</p>
+
+        <div class="d-flex align-items-center mb-2">
+          <span class="price">Rs 899</span>
+          <span class="old-price">Rs 2,299</span>
+          <span class="discount">61% off</span>
+        </div>
+
+        <div class="d-flex align-items-center mb-4">
+          <button class="btn btn-outline-secondary btn-sm">-</button>
+          <span class="mx-3">1</span>
+          <button class="btn btn-outline-secondary btn-sm">+</button>
+        </div>
+
+        <p class="fw-semibold">Delivery</p>
+        <p>Delivery by <b>13 Aug, Wednesday</b> | Free<br>
+          If ordered before 9:24 PM</p>
+
+        <p class="fw-semibold mt-4">Description</p>
+        <p>
+         This fragrance exudes a confident and enigmatic personality. Its <br>composition features a top note of lemon and mandarin with a <br>twist of apple that enhances the freshness. The heart reveals a <br>warm blend of high-grade lavender and a hint of cinnamon,<br> beautifully wrapped in patchouli, musk, and vanilla to ensure a <br>powerful and flowing scent.
+        </p>
+
+        <p class="fw-semibold mt-4">Available Offers</p>
+        <ul class="list-unstyled">
+          <li>✅ Buy two of the same product and get a third one free.</li>
+          <li>✅ Enjoy free standard shipping on orders exceeding $1,399.</li>
+          <li>✅ Get 15% off your first order </li>
+          <li>✅ Receive a free gift case with the purchase of any perfume over Rs.2000.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+      <div class="featured-collections">
+    <h2 style="font-size: 35px; margin-left: 50px;"><strong>Suggested for you</strong></h2>
+    <div class="carousel-container" id="perfumeScrollContainer">
+        <div class="carousel-track">
+              <div>
+            <div  class="perfume-card"><img src="https://m.media-amazon.com/images/I/61oCd-BAyxL._AC_UF1000,1000_QL80_.jpg" style="width: 200px;"> </div>
+            <div>
+              <br><h5>Autograph Eau De parfum 100ml <br>For Men</h5><b>RS 650</b>   <span style="text-decoration: line-through;" >RS 1400</span> <br>
+              <button style="background-color: #00354B; width: 340px; color: aliceblue; border-radius: 5px; padding: 10px; " >Add to Cart</button>
+           
+            </div>
+          
+          </div>
+          
+          <div>
+            <div class="perfume-card"> <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/perfume/v/c/l/100-kyros-long-lasting-perfume-eau-de-parfum-ajmal-men-original-imah9pdcgkawmjkj.jpeg" style="width: 200px;"></div>
+            <div>
+             <br><h5>Kyros Eau De parfum 100ml <br>For Men</h5><b>RS 899</b>   <span style="text-decoration: line-through;" >RS 2000</span> <br>
+              <button style="background-color: #00354B; width: 340px; color: aliceblue; border-radius: 5px; padding: 10px; " >Add to Cart</button>
+            </div>
+         
+          </div>
+            <div>
+            <div class="perfume-card"> <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/perfume/y/t/b/100-oud-dubai-long-lasting-unisex-perfume-eau-de-parfum-ajmal-original-imahgc9cfzfg4k8a.jpeg" style="width: 200px;"></div>
+            <div>
+                   <br><h5>Autograph Eau De parfum 100ml <br>For Men</h5><b>RS 999</b>   <span style="text-decoration: line-through;" >RS 2241</span> <br>
+              <button style="background-color: #00354B; width: 340px; color: aliceblue; border-radius: 5px; padding: 10px; " >Add to Cart</button>
+            </div>
+          </div>
+            
+            <div>
+            <div class="perfume-card"> <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/perfume/l/e/o/100-nereus-long-lasting-perfume-eau-de-parfum-ajmal-men-original-imah79numhxphz6s.jpeg" style="width: 200px;"></div>
+           <div>
+            <br><h5>Royal Eau De parfum 100ml <br>For Men</h5><b>RS 650</b>   <span style="text-decoration: line-through;" >RS 1400</span> <br>
+              <button style="background-color: #00354B; width: 340px; color: aliceblue; border-radius: 5px; padding: 10px; " >Add to Cart</button>
+           </div>
+          </div>
+           
+          <div>
+            <div class="perfume-card"><img src="https://rukminim2.flixcart.com/image/480/640/xif0q/perfume/q/4/r/100-scent-ocean-long-lasting-perfume-eau-de-parfum-ajmal-women-original-imah79ru3gmykrhw.jpeg?q=90" style="width: 200px;"></div>
+            <div>
+               <br><h5>Royal Eau De parfum 100ml <br>For Men</h5><b>RS 750</b>   <span style="text-decoration: line-through;" >RS 2400</span> <br>
+              <button style="background-color: #00354B; width: 340px; color: aliceblue; border-radius: 5px; padding: 10px; " >Add to Cart</button>
+            </div>
+          </div>
+            
+          <div>
+            <div class="perfume-card"><img src="https://www.penz.co.in/wp-content/uploads/2024/09/8906150344693-6.jpg" style="width: 250px; height: 300px; padding-bottom: 60px; "></div>
+         <div>
+           <br><h5>Royal Eau De parfum 100ml <br>For Men</h5><b>RS 750</b>   <span style="text-decoration: line-through;" >RS 2400</span> <br>
+              <button style="background-color: #00354B; width: 340px; color: aliceblue; border-radius: 5px; padding: 10px; " >Add to Cart</button>
+         </div>
+         </div>
+       
+          </div>
+    </div>
+         
+</div>
+
+
+
+    <footer style="background-color: #8BB8BE;  display: flex; margin-top: 50px; " >
+        
+     <div class="Fragranzia">
+       <h1 style="padding-top: 130px; margin-left: 100px; padding-bottom: 70px; font-size: 40px ; " ><strong>Fragranzia</strong></h1>
+     </div>
+     
+
+
+     <div class="right-all" style="text-align: center ; display: flex; gap: 150px; margin-left: 450px; padding: 30px; " >
+
+      <div class="right" style="margin-top: 9px;" >
+        <h5><b>Pages</b></h5>
+       <p>Home</p>
+       <p>Products</p>
+       <p>Gifting</p>
+       <p>About</p>
+       <p>Profile</p>
+    </div>
+
+    <div class="right-2" >
+     <h5></h5>
+     <h5><b>Quick Links</b></h5>
+       <p>Privacy policy</p>
+       <p>Terms and conditions</p>
+       <p>FAQs</p>
+       <p>Customer service</p>
+      
+    </div>
+
+    <div class="right-3" style="margin-top: 10px;" >
+      <p><i class="bi bi-envelope "></i> ftrafurniture@gmail.com</p>
+      <p><i class="bi bi-telephone"></i> +91 9876543210 </p>
+      <h5><b>Social Media</b></h5>
+      <i class="bi bi-instagram"></i> <i class="bi bi-facebook"></i> <i class="bi bi-twitter-x"></i> <i class="bi bi-youtube"></i> <i class="b bi-linkedin"></i>
+    </div>
+   
+      </div> 
+    
+    </footer>
+
+
+         <footer style="background-color: #8fb9bd; text-align: center; padding: 15px 0;">
+ 
+            <hr style=" display: block; width: 100%; border-top: 2px solid black; ">
+
+         <div style="display: flex;">
+
+            <div style="margin-left: 100px;">
+    Web Accessibility | Terms of Use | Privacy Statement | Contact Us
+  </div>
+
+
+  <div style="margin-left: 500px;">
+    © 2024 fragranza Company. All rights reserved.
+  </div>
+
+  </div>
+</footer>
+
+    
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
